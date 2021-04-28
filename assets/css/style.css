@@ -76,10 +76,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 70px;
   transition: all 0.5s;
   z-index: 997;
+  background-color: black;
 
 }
 
-#header .containerHeader{
+.containerHeader{
   position: relative !important;
 
 }
@@ -110,7 +111,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #headerSvg {
   display:block;
-  width:100%;
+  width:auto;
+  height: 117px;
+
 }
 
 
