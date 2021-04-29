@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #222222;">
 
 <head>
   <meta charset="utf-8">
@@ -160,7 +160,7 @@
 
         <div class="row">
           
-          <div id = "aboutWords" class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
+          <div id = "aboutWords" class="col-xl-4 col-lg-5 pt-5 pt-lg-0">
 
 
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
@@ -178,8 +178,8 @@
             
 
           </div>
-          <div class="col-xl-6 col-lg-7" data-aos="fade-right">
-            <img src="assets/img/mainLogo.png" class="img-fluid" alt="">
+          <div class="col-xl-8 col-lg-7 aboutPic" data-aos="fade-right">
+            <img src="assets/img/mainLogoLarge.png" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -239,18 +239,37 @@
         <div class="row mt-5 justify-content-center" data-aos="fade-up">
           <div class="col-lg-10">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              
+               
+              <div class="form-group mt-3">
+                Name*  
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+
+                <div class="form-group mt-3">
+                  Email*
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
-              </div>
+
+                <div class="form-group mt-3">
+                  OS*
+                  <input type="text" name="os" class="form-control" id="name" placeholder="OS" required>
+                </div>
+                
+                
+                <div class="form-group mt-3">
+                  Game*
+                  <input type="text" class="form-control" name="game" id="game" placeholder="Game" required>
+                </div>
+              
+
               <div class="form-group mt-3">
+                Subject*
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
+
               <div class="form-group mt-3">
+                Message*
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
@@ -277,18 +296,20 @@
 
 
 
-      <div class="copyright">
-         Copyright &copy; 2021 STARSHIP ENGINEERING. All Rights Reserved. <strong><span>Maxim</span></strong>. All Rights Reserved
+      <div class="copyright col-lg-6">
+         Copyright &copy; 2021 <strong><span>STARSHIP ENGINEERING</span></strong>. All Rights Reserved.
       </div>
-      <div class="col-lg-2 col-md-6 footer-links">
+
+      <div class="footlist col-lg-6">
         <ul>
           <a href="#newHero">Home |</a>
-          <a href="#">About us |</a>
-          <a href="#">Services |</a>
-          <a href="#">Terms of service |</a>
-          <a href="#">Privacy policy</a>
+          <a href="#features">Games |</a>
+          <a href="#aboure">About |</a>
+          <a href="#services">Connect |</a>
+          <a href="#contact">Support</a>
         </ul>
       </div>
+
     </div>
   </footer><!-- End Footer -->
 
