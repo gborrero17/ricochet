@@ -93,6 +93,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
+  float: left;
+  z-index: 20;
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
@@ -103,7 +105,8 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  height: 86px;
+  padding-left: 38px;
 }
 
 
@@ -123,6 +126,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute !important;
   background: rgba(100,100,100,0);
   top:0px;
+  width: 100%;
 
 }
 
@@ -135,11 +139,12 @@ h1, h2, h3, h4, h5, h6 {
 */
 .navbar {
   padding: 0;
+  float: right;
 }
 
 .navbar ul {
   margin: 0;
-  padding: 0;
+  padding-right: 50px;
   display: flex;
   list-style: none;
   align-items: center;
@@ -368,7 +373,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
+  /*background: rgba(0, 0, 0, 0.4);*/
   position: absolute;
   bottom: 0;
   top: 0;
@@ -442,7 +447,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f2f9f8;
+  background-color: white;
 }
 
 .section-title {
@@ -517,11 +522,16 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  background-color: black;
+}
+
 .about h3 {
   font-weight: 400;
   font-size: 34px;
   color: #21413c;
 }
+
 
 .about .icon-box {
   margin-top: 44px;
@@ -534,16 +544,28 @@ section {
 }
 
 .about .icon-box h4 {
-  font-size: 22px;
+  font-size: 100px;
   font-weight: 500;
   margin-left: 60px;
-  color: #21413c;
+  color: white;
 }
 
 .about .icon-box p {
   font-size: 15px;
-  color: #848484;
+  color: white;
   margin-left: 60px;
+}
+
+.img-fluid {
+
+  padding-top: 20%;
+  min-width: 100% !important;
+  height: auto;
+}
+
+#aboutWords
+{
+  margin-top: 10%;
 }
 
 /*--------------------------------------------------------------
@@ -580,7 +602,7 @@ section {
 }
 
 .steps .content-item p {
-  color: #aaaaaa;
+  color: white;
   font-size: 15px;
   margin: 0;
   padding: 0;
@@ -651,6 +673,40 @@ section {
   }
 }
 
+#gamesInfo{
+  padding: 20px 100px 100px 0px;
+}
+
+#gamesWords{
+  padding: 0px 40px 40px 0px;
+  font-style: italic;
+}
+
+#gamesShooter{
+  padding-left: 100px;
+  padding-bottom: 30px;
+  padding-top: 75px;
+  padding-right: 0px;
+}
+
+.appSize{
+  width: 100px;
+  height: auto;
+}
+
+#appStore{
+  float:right;
+  padding-left: 95px;
+}
+
+
+#appGoogle{
+  padding-left: 45px;
+}
+
+#appMicro{
+  float:left;
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -1176,6 +1232,10 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact{
+  background-color: black;
+}
+
 .contact .info {
   padding: 30px;
   width: 100%;
