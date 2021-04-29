@@ -725,6 +725,17 @@ section {
  
 }
 
+@media (max-width: 992px) {
+  #gamesShooter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+
+
+
 .appSize{
   width: 100px;
   height: auto;
@@ -819,6 +830,10 @@ section {
 
 .services .icon-box-blue .icon i {
   color: #2282ff;
+}
+
+.socialPad{
+  padding: 15%;
 }
 
 /*--------------------------------------------------------------
