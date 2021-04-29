@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #1bac91;
+  color: white;
   text-decoration: none;
 }
 
 a:hover {
-  color: #22d8b6;
+  color: rgb(0,85,255);
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1bac91;
+  background: rgb(0,85,255);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #21cfaf;
+  background: rgb(0,85,255);
   color: #fff;
 }
 
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 #headerSvg {
   display:block;
   width:auto;
-  height: 117px;
+  height: 115px;
 
 }
 
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: 3px;
   left: 0;
-  background-color: #1bac91;
+  background-color: rgb(0,85,255);
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -272,6 +272,15 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
 }
 
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+  .navbar ul {
+    display: none;
+  }
+}
+
 
 .navbar-mobile {
   position: fixed;
@@ -315,11 +324,11 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a {
   padding: 10px 20px;
   font-size: 15px;
-  color: #21413c;
+  color: rgb(0,85,255);
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #1bac91;
+  color: rgb(0,85,255);
 }
 
 .navbar-mobile .getstarted {
@@ -351,7 +360,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #1bac91;
+  color: rgb(0,85,255);
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -361,29 +370,24 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+#newHero{
+
   width: 100%;
-  height: calc(100vh - 70px);
-  background: url("../img/hero-bg.jpg") center center;
-  background-size: cover;
+
+}
+
+
+#hero {
+  height: 400px;
+  width: 100vw;
+  background: url("../img/hero-bg.jpg") no-repeat fixed;
   position: relative;
   margin-top: 70px;
   padding: 0;
+  
 }
 
-#hero:before {
-  content: "";
-  /*background: rgba(0, 0, 0, 0.4);*/
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 
-#hero .container {
-  z-index: 2;
-}
 
 #hero h1 {
   margin: 0 0 10px 0;
@@ -414,17 +418,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started:hover {
-  border-color: #1bac91;
-  background: #1bac91;
+  border-color: rgb(0,85,255);
+  background: black;
 }
 
-@media (min-width: 1024px) {
+
+
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}@media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
 }
 
-
+@media (max-width: 992px) {
+  #hero {
+    margin-top: 60px;
+    width: 100%;
+    
+  }
+}
 
 @media (max-width: 768px) {
   #hero h1 {
@@ -460,7 +483,19 @@ section {
   font-weight: 300;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #21413c;
+  color: black;
+}
+
+#section-title-support{
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: white;
+}
+
+#section-title-supWords{
+  color: white;
 }
 
 .section-title p {
@@ -477,12 +512,22 @@ section {
   margin-top: 72px;
 }
 
-
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 60px;
+  }
+}
 
 .breadcrumbs h2 {
   font-size: 24px;
   font-weight: 300;
   margin: 0;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs h2 {
+    margin: 0 0 10px 0;
+  }
 }
 
 
@@ -556,12 +601,6 @@ section {
   margin-left: 60px;
 }
 
-.img-fluid {
-
-  padding-top: 20%;
-  min-width: 100% !important;
-  height: auto;
-}
 
 #aboutWords
 {
@@ -678,15 +717,15 @@ section {
 }
 
 #gamesWords{
-  padding: 0px 40px 40px 0px;
+ 
   font-style: italic;
 }
 
 #gamesShooter{
-  padding-left: 100px;
-  padding-bottom: 30px;
-  padding-top: 75px;
-  padding-right: 0px;
+  display: block;
+  width: 200px;
+  height: auto;
+ 
 }
 
 .appSize{
@@ -705,6 +744,27 @@ section {
 }
 
 #appMicro{
+  float:left;
+}
+
+#cellphone{
+  width:100%;
+  height: auto;
+}
+
+#rLogo{
+  height: 60px;
+  width: auto;
+  
+}
+
+#rLogoWrite p {
+
+  padding: 15px 110px 0 0;
+  font-style: italic;
+}
+
+#rLogoWrite{
   float:left;
 }
 /*--------------------------------------------------------------
@@ -1245,7 +1305,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #1bac91;
+  color: white;
   float: left;
   width: 44px;
   height: 44px;
@@ -1269,7 +1329,7 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #43857a;
+  color: white;
 }
 
 .contact .info .email p {
@@ -1296,12 +1356,12 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #1bac91;
+  background: rgb(0,85,255);
   color: #fff;
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #1bac91;
+  background: rgb(0,85,255);
   color: #fff;
 }
 
@@ -1332,7 +1392,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: rgb(0,85,255);
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1352,7 +1412,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid white;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1373,7 +1433,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #1bac91;
+  background: rgb(0,85,255);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1382,7 +1442,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #22d8b6;
+  background: rgb(0,85,255);
 }
 
 @-webkit-keyframes animate-loading {
@@ -1407,7 +1467,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: black;
+  background: #222222;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
