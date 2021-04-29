@@ -466,7 +466,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 60px 0 0 0;
   overflow: hidden;
 }
 
@@ -602,7 +602,16 @@ section {
 
 }
 
+@media (max-width: 992px) {
+  #about {
+    padding: 0;
 
+  }
+}
+
+#mainLogoLarge{
+  padding: 0 20% 5% 20%;
+}
 
 /*--------------------------------------------------------------
 # Steps
@@ -713,6 +722,13 @@ section {
   padding: 20px 100px 100px 0px;
 }
 
+@media (max-width: 992px) {
+  #gamesInfo {
+    padding: 0px;
+  }
+}
+
+
 #gamesWords{
  
   font-style: italic;
@@ -730,7 +746,8 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    padding: 0 10% 0 10%;
+
   }
 }
 
@@ -742,22 +759,40 @@ section {
 }
 
 #appStore{
-  float:right;
-  padding-left: 95px;
+  padding: 5px;
 }
 
 
 #appGoogle{
-  padding-left: 45px;
+  padding: 5px;
 }
 
 #appMicro{
-  float:left;
+  padding: 5px;
+}
+
+
+@media (max-width: 992px) {
+  #appStore, #appGoogle, #appMicro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 10% 0;
+
+  }
 }
 
 #cellphone{
   width:100%;
   height: auto;
+}
+
+
+@media (max-width: 992px) {
+  #cellphone {
+    padding: 0 0 15% 0;
+
+  }
 }
 
 #rLogo{
@@ -774,6 +809,23 @@ section {
 
 #rLogoWrite{
   float:left;
+}
+
+@media (max-width: 992px) {
+  #rLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    height: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  #rLogoWrite p {
+    text-align: center;
+    padding: 10% 20% 0 20%;
+  }
 }
 /*--------------------------------------------------------------
 # Services
