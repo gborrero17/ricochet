@@ -295,6 +295,10 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 0;
 }
 
+.mobile-nav-toggle{
+  padding: 15px;
+}
+
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
@@ -325,11 +329,11 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a {
   padding: 10px 20px;
   font-size: 15px;
-  color: rgb(0,85,255);
+  color: black;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: rgb(0,85,255);
+  color: black;
 }
 
 .navbar-mobile .getstarted {
@@ -361,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: rgb(0,85,255);
+  color: black;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -782,9 +786,13 @@ section {
   }
 }
 
-#cellphone{
-  width:100%;
-  height: auto;
+#cellphone {
+  width: 28px;
+  height: 100%;
+  object-fit: cover;
+  object-position: 7% 10%;
+  float: right;
+  padding-bottom: 10%;
 }
 
 
@@ -1663,3 +1671,5 @@ section {
   font-size: 13px;
   color: black;
 }
+
+/************FIRE************/

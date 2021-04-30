@@ -235,3 +235,37 @@
   });
 
 })()
+
+
+/***********Animation on scroll again */
+
+window.onscroll = function (e) {
+  var vertical_position = 0;
+  if (pageYOffset)//usual
+    vertical_position = pageYOffset;
+  else if (document.documentElement.clientHeight)//ie
+    vertical_position = document.documentElement.scrollTop;
+  else if (document.body)//ie quirks
+    vertical_position = document.body.scrollTop;
+
+  var your_div = document.getElementById("cellphone");
+
+  if (vertical_position<=548){
+  your_div.style.width = (vertical_position + 150) + 'px';//200 is arbitrary.. just to show you could now position it how you want
+  console.log("im substracting");
+  }
+  else {
+  your_div.style.width = (your_div.width-10) + 'px';//200 is arbitrary.. just to show you could now position it how you want
+  console.log("im adding");}
+
+ 
+
+
+  console.log("VERTICAL",vertical_position);
+
+  console.log("WIDTH", your_div.width);
+
+
+
+}
+
